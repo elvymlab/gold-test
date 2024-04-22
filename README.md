@@ -1,16 +1,25 @@
-# gold_test
+# Тестовый проект для НАШЕ ЗОЛОТО
 
-A new Flutter project.
+## Описание проекта
+Этот проект представляет собой тестовое задание для НАШЕ ЗОЛОТО. Проект разработан с использованием следующих технологий:
 
-## Getting Started
+* **Flutter** - кроссплатформенный фреймворк для создания мобильных приложений.
+* **Dio** - HTTP клиент для Dart и Flutter.
+* **Retrofit** - библиотека для работы с REST API.
+* **Provider** - управление состоянием приложения.
+* **Injectable** - внедрение зависимостей.
+* **UIKit** - набор инструментов для создания пользовательского интерфейса.
+* **flutter_gen** - пакет для генерации ассетов.
+* **mobile_scanner** - универсальный сканер на базе MLKit
 
-This project is a starting point for a Flutter application.
+Проект содержит базовую логику работы приложения, включая взаимодействие с REST API, обработку данных, сканирование штрихкода товара и отображение информации о товаре пользователю.
 
-A few resources to get you started if this is your first Flutter project:
+Версия Flutter 3.16.5.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Установка и запуск
+Для запуска проекта выполните следующие шаги:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Клонируйте репозиторий.
+2. Запустите `flutter pub get`.
+3. Запустисте кодогенерацию `dart run build_runner build  --delete-conflicting-outputs`.
+4. Запустите `flutter run`.
