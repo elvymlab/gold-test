@@ -1,0 +1,65 @@
+name: gold_test
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+   # Стандартный пакет флаттер-а.
+   flutter:
+     sdk: flutter
+  # Стандартный пакет для локализации.
+   flutter_localizations:
+     sdk: flutter
+   get_it: ^7.6.0
+   # Пакет c аннотациями для retrofit_generator, для генерации REST-овых API клиентов.
+   retrofit: ^4.0.1
+   # Пакет с аннотациями для работа генератора json_serializable,
+   # для генерации методов конвертации json-а в объект класса/из объекта класса.
+   json_annotation: ^4.8.1
+   # Пакет - оболчка вокруг InheritedWidget, используется для стейт-менеджмента и прокидыванием связей между виджетами.
+   provider: ^6.0.5
+   # Пакет для работы API клиентов.
+   dio: ^5.3.2
+   # Пакет для http запросов.
+   http: ^1.1.0
+   # Пакет для запроса permission-ов и проверки их статуса.
+   permission_handler: ^11.1.0
+   # DI аннотации
+   injectable: ^2.3.2
+  # Пакет с базой данных.
+   hive_flutter: ^1.1.0
+   # Пакет со стилями и кастомными виджетами.
+   ui_kit:
+     path: ui_kit
+   # Пакет для сканирования баркода.
+   mobile_scanner: ^4.0.1
+   # Пакет для виджета с кэшируемой загрузкой изображения.
+   cached_network_image: ^3.2.3
+  # Пакет с виджетом шиммера.
+   shimmer: ^3.0.0
+  # Пакет для работы с локализацией, предоставляет DateFormat и NumberFormat.
+   intl: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Пакет для поддержки кодогенерации.
+  build_runner: ^2.4.9
+  injectable_generator: ^2.4.1
+  # Пакет с набором правил линтера.
+  flutter_lints: ^2.0.2
+  # Пакет для генерации REST-овых API клиентов.
+  retrofit_generator: ^8.0.6
+  # Пакет для генерации методов конвертации json-а в объект класса/из объекта класса.
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/certificate/

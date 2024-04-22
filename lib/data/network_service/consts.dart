@@ -1,0 +1,1 @@
+const authorizationKey = 'Authorization';

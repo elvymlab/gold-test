@@ -1,0 +1,56 @@
+name: ui_kit
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  # Стандартный пакет флаттер-а.
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  # Пакет для поддержки кодогенерации.
+  build_runner: ^2.4.6
+  # Пакет для кодогенерации для ассетов - цвета, шрифты, иконки, изображения.
+  flutter_gen_runner: ^5.3.1
+  # Пакет с набором правил линтера.
+  flutter_lints: ^2.0.2
+
+flutter_gen:
+  output: lib/assets
+  assets:
+    outputs:
+      package_parameter_enabled: true
+  colors:
+    enabled: true
+    outputs:
+      class_name: UiKitColor
+    inputs:
+      - assets/color/colors.xml
+  fonts:
+    enabled: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Raleway-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Raleway-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Raleway-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Raleway-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Raleway-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Raleway-Thin.ttf
+          weight: 100
+
+
